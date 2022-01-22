@@ -85,13 +85,121 @@ CREATE TABLE movies (
 CREATE TABLE top_cast (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
-    director TEXT,
+    name TEXT,
     role TEXT
 );
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+
+INSERT INTO movies (
+    title,
+    year_released,
+    mpaa_rating,
+    director
+)
+
+VALUES (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Christopher Nolan"
+),
+(
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Christopher Nolan"
+),
+(
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Christopher Nolan"
+);
+    
+INSERT INTO top_cast (
+    title,
+    name,
+    role
+)
+
+VALUES (
+    "Batman Begins",
+    "Christian Bale",
+    "Bruce Wayne"    
+),
+(
+    "Batman Begins",
+    "Michael Caine",
+    "Alfred"
+),
+(
+    "Batman Begins",
+    "Liam Neeson",
+    "Ra's Al Ghul"
+),
+(
+    "Batman Begins",
+    "Katie Holmes",
+    "Rachel Dawes"
+),
+(
+    "Batman Begins",
+    "Gary Oldman",
+    "Commissioner Gordon"
+),
+(
+    "The Dark Knight",
+    "Christian Bale",
+    "Bruce Wayne"
+),
+(
+    "The Dark Knight",
+    "Heath Ledger",
+    "Joker"
+),
+(
+    "The Dark Knight",
+    "Aaron Eckhart",
+    "Harvey Dent"
+),
+(
+    "The Dark Knight",
+    "Michael Caine",
+    "Alfred"
+),
+(
+    "The Dark Knight",
+    "Maggie Gyllenhaal",
+    "Rachel Dawes"
+),
+(
+    "The Dark Knight Rises",
+    "Christian Bale",
+    "Bruce Wayne"
+),
+(
+    "The Dark Knight Rises",
+    "Gary Oldman",
+    "Commissioner Gordon"
+),
+(
+    "The Dark Knight Rises",
+    "Tom Hardy",
+    "Bane"
+),
+(
+    "The Dark Knight Rises",
+    "Joseph Gordon-Levitt",
+    "John Blake"
+),
+(
+    "The Dark Knight Rises",
+    "Anne Hathaway",
+    "Selina Kyle"
+);
 
 -- Prints a header for the movies output
 .print "Movies"
@@ -100,6 +208,8 @@ CREATE TABLE top_cast (
 
 -- The SQL statement for the movies output
 -- TODO!
+
+SELECT * FROM movies;
 
 -- Prints a header for the cast output
 .print ""
@@ -110,3 +220,5 @@ CREATE TABLE top_cast (
 
 -- The SQL statement for the cast output
 -- TODO!
+
+SELECT * FROM top_cast;
