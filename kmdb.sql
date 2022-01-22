@@ -75,7 +75,6 @@ DROP TABLE IF EXISTS top_cast;
 -- TODO!
 
 CREATE TABLE movies (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     year_released INTEGER,
     mpaa_rating TEXT,
@@ -83,7 +82,6 @@ CREATE TABLE movies (
 );
 
 CREATE TABLE top_cast (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     name TEXT,
     role TEXT
